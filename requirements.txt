@@ -22,11 +22,13 @@ prompt_toolkit==3.0.47
 psutil==6.0.0
 ptyprocess==0.7.0
 pure_eval==0.2.3
+py==1.11.0
 Pygments==2.18.0
 python-dateutil==2.9.0.post0
 python-dotenv==1.0.1
 pytz==2024.1
 pyzmq==26.1.1
+retry==0.9.2
 six==1.16.0
 stack-data==0.6.3
 tornado==6.4.1
