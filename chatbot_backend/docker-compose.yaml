@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  fastapi:
+    build:
+      context: .
+      dockerfile: ./ci_cd/docker/fastapi.dockerfile
+    container_name: fastapi_app
+    network_mode: "host"
+    ports:
+      - "8000:8000"
+    volumes:
+      - type: bind
+        # local directory
+        source: ./services/v1
+        # container directory
+        target: /src/app
+        read_only: true
+    env_file: ./.env

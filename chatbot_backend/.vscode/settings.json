@@ -1,0 +1,17 @@
+{
+    "[python]": {
+        // Automatically format the code when saving a file
+        "editor.formatOnSave": true,
+        // Configure code actions to perform on save
+        "editor.codeActionsOnSave": {
+            // Perform all available fixes on save
+            "source.fixAll": "explicit",
+            // Organize imports on save
+            "source.organizeImports": "explicit",
+        },/*  */
+        // Set the default code formatter to Ruff, assuming it is installed
+        "editor.defaultFormatter": "charliermarsh.ruff"
+    },
+    // Display a vertical ruler at column 88 to help maintain PEP 8 style guide recommendations
+    "editor.rulers": [88]
+}
